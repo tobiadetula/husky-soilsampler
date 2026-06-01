@@ -1,0 +1,21 @@
+# Waypoints config for clearpath_waypoint_nav
+# ─────────────────────────────────────────────
+# Coordinates are in the odom frame (metres) for simulation.
+# For real GPS use, convert lat/lon to local offsets via WaypointCommander.gps_to_local()
+# or replace with UTM coordinates via pyproj.
+#
+# To edit waypoints without recompiling, modify this file and pass it
+# to the node via --params-file, or just edit waypoints directly in
+# waypoint_commander.py under self.waypoints.
+
+waypoint_commander:
+  ros__parameters:
+    robot_namespace: a300_00000
+    goal_tolerance: 0.3          # metres — how close = "reached"
+    heading_tolerance: 0.05      # radians — ~3 degrees
+    max_linear_speed: 0.5        # m/s
+    max_angular_speed: 0.8       # rad/s
+    linear_kp: 0.4               # proportional gain for forward speed
+    angular_kp: 1.2              # proportional gain for turning
+    action_duration: 3.0         # seconds paused at each waypoint
+    use_gps: false

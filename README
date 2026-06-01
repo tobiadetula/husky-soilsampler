@@ -1,0 +1,40 @@
+
+
+
+```
+sudo apt update
+sudo apt install ros-jazzy-navigation2 ros-jazzy-nav2-bringup
+
+```
+
+
+```
+
+```
+
+
+
+## GPS Mode
+```
+ros2 run clearpath_soil_sampler mission_commander \
+  --ros-args \
+  -p use_gps_mode:=true \
+  -p field_polygon_gps:="[55.123400, 9.654300, 55.123400, 9.654600, 55.123200, 9.654600, 55.123200, 9.654300]" \
+  -p row_spacing:=5.0 \
+  -p point_spacing:=5.0 \
+  -p output_csv:=/home/tobi/missions/field_results.csv
+
+```
+
+
+### Cartesian Mode 
+```
+
+ros2 run clearpath_soil_sampler mission_commander \
+  --ros-args \
+  -p use_gps_mode:=false \
+  -p cartesian_width:=20.0 \
+  -p cartesian_height:=20.0 \
+  -p row_spacing:=5.0 \
+  -p point_spacing:=5.0
+```

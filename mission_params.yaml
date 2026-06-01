@@ -1,0 +1,33 @@
+mission_commander:
+  ros__parameters:
+    # ─── 1. MODE SELECTION ───────────────────────────────────────────
+    use_gps_mode: true  # If true, uses GPS coordinates; if false, uses Cartesian coordinates
+    # ─── 2. CARTESIAN MODE (Used if use_gps_mode: false) ─────────────
+    cartesian_start_x: 0.0     # Starting X coordinate in map frame
+    cartesian_start_y: 0.0     # Starting Y coordinate in map frame
+    cartesian_width: 0.8       # Total width of the field in meters
+    cartesian_height: 0.8      # Total height of the field in meters
+    # ─── 3. GPS MODE (Used if use_gps_mode: true) ────────────────────
+    field_polygon_gps: [
+      55.367878, 10.433911,    # bottom-left
+      55.367878, 10.433949,    # bottom-right (+2.4m East)
+      55.367900, 10.433949,    # top-right    (+2.4m North)
+      55.367900, 10.433911,    # top-left     (+2.4m North)
+    ]
+    # ─── 4. GRID DENSITY (Applies to BOTH modes) ─────────────────────
+    row_spacing: 0.5           # Distance (m) between parallel driving lanes
+    point_spacing: 0.5         # Distance (m) between stops in a single lane
+    # ─── 5. HARDWARE ACTUATOR & SENSOR TIMING ────────────────────────
+    sample_depth: 1400.0       # Ticks for the Hall Effect sensor to plunge
+    dwell_time: 10.0           # Seconds to stay in ground before retracting
+    # ─── 6. DATA LOGGING ─────────────────────────────────────────────
+    output_csv: "/home/pi/soil_samples_log.csv"  # ~ is not expanded by ROS 2
+
+simple_navigator:
+  ros__parameters:
+    navigation_mode : "odom"  # "odom" or "gps"
+    # ─── ROBOT DRIVING LIMITS ────────────────────────────────────────
+    xy_tolerance: 0.2          # How close to waypoint (m) to count as "arrived"
+    yaw_tolerance: 0.1         # How close to target angle (rad) to count as "aligned"
+    max_linear_speed: 0.2      # Max forward speed (m/s)
+    max_angular_speed: 0.2     # Max rotation speed (rad/s)

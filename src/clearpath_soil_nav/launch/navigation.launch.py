@@ -1,0 +1,77 @@
+from launch import LaunchDescription
+from launch.actions import (IncludeLaunchDescription, GroupAction,
+                             DeclareLaunchArgument)
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration
+from launch_ros.actions import SetRemap, PushRosNamespace, Node
+from launch_ros.substitutions import FindPackageShare
+import os
+
+def generate_launch_description():
+    nav2_bringup_dir = FindPackageShare('nav2_bringup').find('nav2_bringup')
+    pkg_dir = FindPackageShare('clearpath_soil_nav').find('clearpath_soil_nav')
+
+    nav2_params_file  = os.path.join(pkg_dir, 'config', 'nav2_params.yaml')
+    ekf_params_file   = os.path.join(pkg_dir, 'config', 'ekf.yaml')
+    navsat_params_file = os.path.join(pkg_dir, 'config', 'navsat.yaml')
+
+    use_sim_time_arg = DeclareLaunchArgument(
+        'use_sim_time', default_value='false')
+
+    # --- robot_localization: EKF (odom → base_link) ---
+    ekf_node = Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_node',
+        namespace='a300_00008',
+        parameters=[ekf_params_file],
+        remappings=[('odometry/filtered', 'platform/odom/filtered')],
+        # SILENCE INFO LOGS
+        ros_arguments=['--log-level', 'WARN']
+    )
+
+    # --- robot_localization: navsat_transform (GPS → map) ---
+    navsat_node = Node(
+        package='robot_localization',
+        executable='navsat_transform_node',
+        name='navsat_transform_node',
+        namespace='a300_00008',
+        parameters=[navsat_params_file],
+        remappings=[
+            ('gps/fix',  '/gps/fix'),
+            ('imu/data', '/a300_00008/sensors/imu_0/data'),
+            ('odometry/filtered', '/a300_00008/platform/odom/filtered'),
+        ],
+        # SILENCE INFO LOGS (Fixes the massive spam!)
+        ros_arguments=['--log-level', 'WARN']
+    )
+
+    # --- Nav2 ---
+    # nav2_launch = GroupAction(
+    #     actions=[
+    #         PushRosNamespace('a300_00008'),
+    #         SetRemap(src='cmd_vel', dst='/a300_00008/cmd_vel'),
+    #         SetRemap(src='odom',    dst='/a300_00008/platform/odom/filtered'),
+    #         IncludeLaunchDescription(
+    #             PythonLaunchDescriptionSource(
+    #                 os.path.join(nav2_bringup_dir, 'launch', 'navigation_launch.py')
+    #             ),
+    #             launch_arguments={
+    #                 'use_sim_time': LaunchConfiguration('use_sim_time'),
+    #                 'params_file':  nav2_params_file,
+    #                 'namespace':    'a300_00008',
+    #                 'use_collision_monitor': 'False',  # ← add this to disable the collision monitor
+    #                 # RASPBERRY PI OPTIMIZATIONS:
+    #                 # 'use_composition': 'True', # Run all nodes in one memory space
+    #                 # 'log_level': 'WARN'        # Silence Nav2 INFO logs
+    #             }.items(),
+    #         )
+    #     ]
+    # )
+
+    return LaunchDescription([
+        use_sim_time_arg,
+        ekf_node,
+        navsat_node,
+        # nav2_launch,
+    ])

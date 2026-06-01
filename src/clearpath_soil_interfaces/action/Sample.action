@@ -1,0 +1,15 @@
+float32 target_depth
+float32 dwell_time
+---
+float32 vwc
+float32 vwc_stddev
+float32 temperature
+float32 temperature_stddev
+float32 ec
+float32 ec_stddev
+string message
+bool success
+---
+string current_state
+float32 current_depth
+float32 current_draw

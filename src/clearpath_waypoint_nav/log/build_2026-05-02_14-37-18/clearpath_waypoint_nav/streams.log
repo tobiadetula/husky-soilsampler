@@ -1,0 +1,24 @@
+[1.017s] Invoking command in '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/clearpath_waypoint_nav build --build-base /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/build install --record /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/install.log --single-version-externally-managed install_data
+[1.231s] running egg_info
+[1.248s] writing build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/PKG-INFO
+[1.248s] writing dependency_links to build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/dependency_links.txt
+[1.248s] writing entry points to build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/entry_points.txt
+[1.248s] writing requirements to build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/requires.txt
+[1.249s] writing top-level names to build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/top_level.txt
+[1.277s] reading manifest file 'build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/SOURCES.txt'
+[1.278s] writing manifest file 'build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/SOURCES.txt'
+[1.278s] running build
+[1.278s] running build_py
+[1.278s] copying clearpath_waypoint_nav/waypoint_commander.py -> /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/build/lib/clearpath_waypoint_nav
+[1.278s] running install
+[1.283s] running install_lib
+[1.297s] copying /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/build/lib/clearpath_waypoint_nav/waypoint_commander.py -> /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/python3.12/site-packages/clearpath_waypoint_nav
+[1.298s] byte-compiling /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/python3.12/site-packages/clearpath_waypoint_nav/waypoint_commander.py to waypoint_commander.cpython-312.pyc
+[1.299s] running install_data
+[1.300s] running install_egg_info
+[1.317s] removing '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/python3.12/site-packages/clearpath_waypoint_nav-0.1.0-py3.12.egg-info' (and everything under it)
+[1.317s] Copying build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info to /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/python3.12/site-packages/clearpath_waypoint_nav-0.1.0-py3.12.egg-info
+[1.318s] running install_scripts
+[1.440s] Installing waypoint_commander script to /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/clearpath_waypoint_nav
+[1.440s] writing list of installed files to '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/install.log'
+[1.468s] Invoked command in '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/clearpath_waypoint_nav build --build-base /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/build install --record /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/install.log --single-version-externally-managed install_data

@@ -1,0 +1,19 @@
+running egg_info
+writing build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/PKG-INFO
+writing dependency_links to build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/dependency_links.txt
+writing entry points to build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/entry_points.txt
+writing requirements to build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/requires.txt
+writing top-level names to build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/top_level.txt
+reading manifest file 'build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/SOURCES.txt'
+writing manifest file 'build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/python3.12/site-packages/clearpath_waypoint_nav-0.1.0-py3.12.egg-info' (and everything under it)
+Copying build/clearpath_waypoint_nav/clearpath_waypoint_nav.egg-info to /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/python3.12/site-packages/clearpath_waypoint_nav-0.1.0-py3.12.egg-info
+running install_scripts
+Installing waypoint_commander script to /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/clearpath_waypoint_nav
+writing list of installed files to '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/install.log'

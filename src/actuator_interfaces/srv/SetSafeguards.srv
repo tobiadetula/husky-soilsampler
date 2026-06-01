@@ -1,0 +1,10 @@
+# actuator_interfaces/srv/SetSafeguards.srv
+
+# Request (What the PC sends to the Pico)
+float32 max_current_amps     # Shut down motor if current exceeds this
+float32 max_force_grams      # Shut down motor if load cell exceeds this
+
+---
+# Response (What the Pico sends back to confirm)
+bool success                 # True if limits were accepted
+string message               # e.g., "Safeguards updated successfully"

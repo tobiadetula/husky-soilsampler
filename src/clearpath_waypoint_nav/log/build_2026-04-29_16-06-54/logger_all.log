@@ -1,0 +1,91 @@
+[0.151s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.151s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73d150101ee0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73d15022a510>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73d15022a510>>, mixin_verb=('build',))
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.203s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'clearpath_waypoint_nav'
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.267s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install
+[0.270s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 42 installed packages in /home/tobi/microros_ws/install
+[0.274s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 567 installed packages in /opt/ros/jazzy
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.374s] Level 5:colcon.colcon_core.verb:set package 'clearpath_waypoint_nav' build argument 'cmake_args' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'clearpath_waypoint_nav' build argument 'cmake_target' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'clearpath_waypoint_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'clearpath_waypoint_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'clearpath_waypoint_nav' build argument 'cmake_clean_first' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'clearpath_waypoint_nav' build argument 'cmake_force_configure' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'clearpath_waypoint_nav' build argument 'ament_cmake_args' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'clearpath_waypoint_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'clearpath_waypoint_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.375s] DEBUG:colcon.colcon_core.verb:Building package 'clearpath_waypoint_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav', 'merge_install': False, 'path': '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav', 'symlink_install': False, 'test_result_base': None}
+[0.375s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.376s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.376s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav' with build type 'ament_python'
+[0.377s] Level 1:colcon.colcon_core.shell:create_environment_hook('clearpath_waypoint_nav', 'ament_prefix_path')
+[0.380s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.380s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/clearpath_waypoint_nav/hook/ament_prefix_path.ps1'
+[0.381s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/clearpath_waypoint_nav/hook/ament_prefix_path.dsv'
+[0.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/clearpath_waypoint_nav/hook/ament_prefix_path.sh'
+[0.382s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.382s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.732s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav'
+[0.733s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.733s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.630s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/clearpath_waypoint_nav build --build-base /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/build install --record /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/install.log --single-version-externally-managed install_data
+[2.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/clearpath_waypoint_nav build --build-base /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/build install --record /home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/build/clearpath_waypoint_nav/install.log --single-version-externally-managed install_data
+[2.361s] Level 1:colcon.colcon_core.environment:checking '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav' for CMake module files
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav' for CMake config files
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib'
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/bin'
+[2.363s] Level 1:colcon.colcon_core.environment:checking '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/pkgconfig/clearpath_waypoint_nav.pc'
+[2.363s] Level 1:colcon.colcon_core.environment:checking '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/lib/python3.12/site-packages'
+[2.363s] Level 1:colcon.colcon_core.shell:create_environment_hook('clearpath_waypoint_nav', 'pythonpath')
+[2.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/clearpath_waypoint_nav/hook/pythonpath.ps1'
+[2.363s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/clearpath_waypoint_nav/hook/pythonpath.dsv'
+[2.364s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/clearpath_waypoint_nav/hook/pythonpath.sh'
+[2.364s] Level 1:colcon.colcon_core.environment:checking '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/bin'
+[2.364s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(clearpath_waypoint_nav)
+[2.364s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/clearpath_waypoint_nav/package.ps1'
+[2.365s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/clearpath_waypoint_nav/package.dsv'
+[2.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/clearpath_waypoint_nav/package.sh'
+[2.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/clearpath_waypoint_nav/package.bash'
+[2.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/clearpath_waypoint_nav/package.zsh'
+[2.366s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/clearpath_waypoint_nav/share/colcon-core/packages/clearpath_waypoint_nav)
+[2.367s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.367s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.367s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.367s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.373s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.373s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.373s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.400s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.401s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/local_setup.ps1'
+[2.402s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/_local_setup_util_ps1.py'
+[2.403s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/setup.ps1'
+[2.405s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/local_setup.sh'
+[2.405s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/_local_setup_util_sh.py'
+[2.406s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/setup.sh'
+[2.407s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/local_setup.bash'
+[2.407s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/setup.bash'
+[2.409s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/local_setup.zsh'
+[2.410s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tobi/Documents/masters-thesis/code/clearpath_waypoint_nav/install/setup.zsh'

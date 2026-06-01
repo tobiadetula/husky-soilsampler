@@ -1,0 +1,17 @@
+navsat_transform_node:
+  ros__parameters:
+    frequency: 30.0
+    delay: 3.0
+    magnetic_declination_radians: 0.0   # look up for your location
+    yaw_offset: 0.0
+    zero_altitude: True
+    broadcast_utm_transform: False
+    publish_filtered_gps: True
+    use_odometry_yaw: False
+    wait_for_datum: False
+    # datum: [lat, lon, 0.0]  # optionally fix origin to a known point
+    
+    # topics
+    gps_topic: /gps/fix
+    imu_topic: /a300_00008/sensors/imu_0/data
+    odometry_topic: /a300_00008/platform/odom/filtered
